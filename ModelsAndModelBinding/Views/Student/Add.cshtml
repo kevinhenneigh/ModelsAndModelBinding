@@ -8,27 +8,32 @@
     <h1>Add new Student</h1>
 
     <form method="post">
-        <label>Full Name</label>
-        <input type="text" name="full_name" />
-        <br />
+        <div class="form-group">
+            <label>Full Name</label>
+            <input class="form-control" type="text" name="full_name" />
+        </div>
 
-        <label>Date of Birth</label>
-        <input type="text" name="dob" />
-        <br />
+        <div class="form-group">
+            <label>Date of Birth</label>
+            <input class="form-control" type="text" name="dob" />
+        </div>
 
-        <label>Student Email</label>
-        <input type="text" name="email" />
-        <br />
+        <div class="form-group">
+            <label>Student Email</label>
+            <input class="form-control" type="text" name="email" />
+        </div>
 
-        <label>Home Phone</label>
-        <input type="text" name="home_phone" />
-        <br />
-
-        <input type="submit" value="Add Student" />
+        <div class="form-group">
+            <label>Home Phone</label>
+            <input class="form-control" type="text" name="home_phone" />
+        </div>
+            <input type="submit" value="Add Student" />
     </form>
 }
 else
 {
-    <p>Student added successfully</p>
+    <div class="alert alert-success">
+        @ViewData["Added"]
+    </div>
 }
 
